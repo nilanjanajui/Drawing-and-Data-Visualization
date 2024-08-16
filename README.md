@@ -1,5 +1,5 @@
 # Drawing and Data Visualization
-
+## Author: Nilanjana Das Jui
 Welcome to my repository for the "Drawing and Data Visualization" course! This repository is dedicated to tracking my progress and learning in the realm of data visualization, focusing on the art and science of visualizing data effectively using various tools and techniques.
 
 ## Course Overview
