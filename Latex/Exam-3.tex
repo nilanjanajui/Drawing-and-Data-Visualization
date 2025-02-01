@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{tikz,tkz-graph,graphicx}
+\usepackage{xcolor}
+\usetikzlibrary{arrows.meta,positioning,shapes}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz, pgfplots}
+\usepackage[T1]{fontenc}
+\usepackage{adjustbox}
+\usetikzlibrary{positioning, automata, calc}
+\pgfplotsset{compat = 1.18}
+
+\begin{document}
+\begin{tikzpicture}[
+    ->, >=latex, % Use LaTeX-style arrows
+    line width=1.5pt, % Increase the thickness of the arrow lines
+    >=latex, scale=2, % Scale the arrowheads
+    node distance=4cm and 0.2cm, % Adjust node distance (horizontal and vertical)
+    auto % Automatically position labels
+]
+
+% Nodes with labels
+\node[state,fill=black!40,draw=black ,label=above:{$a$}] (A) {$ $};
+\node[state,fill=black!40,draw=black , label=above:{$b$}] (B) [right of=A] {$ $};
+\node[state,fill=black!40,draw=black , label=above:{$c$}] (C) [right of=B]{$ $};
+\node[state,fill=black!40,draw=black , label=above:{$d$}] (D) [below of=A]{$ $};
+
+\node[state,fill=black!40,draw=black , label=above:{$e$}] (E) [below of = B]{$ $};
+
+% Edges with labels
+\path (A) edge[bend left] node {$ $} (B);
+\path (B) edge[bend left] node {$ $} (A);
+\path (A) edge[bend left] node {$ $} (D);
+\path (D) edge[bend left] node {$ $} (A);
+
+\path (B) edge node {$ $} (C);
+\path (B) edge node {$ $} (E);
+\path (E) edge node {$ $} (C);
+
+\path (E) edge node {$ $) (D);
+
+
+\end{tikzpicture}
+
+\end{document}

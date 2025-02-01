@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz, pgfplots}
+\usepackage[T1]{fontenc}
+\usetikzlibrary{positioning}
+
+\title{Tikz one more}
+
+\begin{document}
+\begin{center}
+\maketitle % This command generates the title, author, and date.
+
+\section{2D plots}
+
+\end{center}
+%\begin{tikzpicture}
+%drawing basic shapes
+%\draw[red,very thick] (0,0) -- (4,0);
+%\draw[red,very thick] (0,0)rectangle (4,4);
+%\draw[red,very thick] (0,0)circle(4cm);
+%\draw[red,very thick] (0,0)ellipse(2cm and 1cm);
+%\draw[red,very thick] (0,0)arc(0:180:4);
+%\draw[thick] (0,0) -- (4,0) -- (2,3) -- cycle;
+
+%fillings
+%\fill[red] (0,0)rectangle (4,4);
+%\end{tikzpicture}
+
+%\begin{tikzpicture}[every node/.style={circle,draw=black}]
+%\node{1}
+%	child{node{2}
+%		child{node{4}}	
+%		child{node{5}}
+%	}
+%	child{node{3}}
+%;
+%
+%\end{tikzpicture}
+
+%user defined node
+\tikzset{
+		treenode/.style={align = center,inner sep=0pt},
+		%Black nodes
+		node_black/.style={treenode,circle,white,font=\bfseries,draw= black,fill=black,text width =0.8cm},
+		%Red nodes
+		node_red/.style={treenode,circle,red,draw = red,very thick,text width =0.8cm},
+		%Nil nodes
+		node_nil/.style={treenode,rectangle,fill=black,minimum width =0.3cm,minimum height=0.3cm}
+}
+
+
+\begin{tikzpicture}[->,level/.style={sibling distance =2cm,level distance =1.5cm}]
+
+\node[node_black]{38}
+	child{node[node_red]{19}
+		child{node[node_black]{12}
+			child{node[node_red]{18}}
+			child{node[node_nil]{}}	
+	}
+		child{node[node_black]{31}}
+	}
+	child{node[node_black]{41}}
+;
+
+\end{tikzpicture}
+\end{document}
