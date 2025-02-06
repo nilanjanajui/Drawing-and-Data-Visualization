@@ -1,5 +1,0 @@
-\contentsline {section}{\numberline {1}Practice Graph 1}{2}{}%
-\contentsline {section}{\numberline {2}Practice Graph 2(List)}{3}{}%
-\contentsline {section}{\numberline {3}Practice graph 3 (linked list)}{3}{}%
-\contentsline {section}{\numberline {4}Multiple trees}{3}{}%
-\contentsline {section}{\numberline {5}Dashed tree}{4}{}%
