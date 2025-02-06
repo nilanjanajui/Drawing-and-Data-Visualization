@@ -1,0 +1,95 @@
+\documentclass{article}
+\usepackage{amsmath}
+\newcommand{\diff}{\mathop{}\!d}            % For italic
+% \newcommand{\diff}{\mathop{}\!\mathrm{d}} 		% For upright
+\begin{document}
+
+% Math Mode
+
+A sentence with inline mathematics: $y = mx + c$.
+A second sentence with inline mathematics: $5^{2}=3^{2}+4^{2}$.
+
+
+A second paragraph containing display math.
+\[
+  y = mx + c
+\]
+See how the paragraph continues after the display. \\
+
+1. Superscripts $a^{b}$ and subscripts $a_{b}$ .		\\
+
+2. Some mathematics: $y = 2 \sin \theta^{2}$.  \\
+
+% Display Mathematics
+
+3. A paragraph about a larger equation
+\[
+\int_{-\infty}^{+\infty} e^{-x^2} \, dx
+\]		\\
+
+
+% We’ve added one piece of manual spacing here: \, makes a thin space before the dx. Formatting of the differential operator varies: some publishers use an upright ‘d’ whilst others use an italic ‘d’. One way to write your source to allow you to handle either is to create a command \diff that you can adjust as required,
+
+4. A paragraph about a larger equation
+\[
+\int_{-\infty}^{+\infty} e^{-x^2} \diff x
+\]		\\
+
+% The amsmath package
+
+Solve the following recurrence for $ n,k\geq 0 $:
+\begin{align*}
+  Q_{n,0} &= 1   \quad Q_{0,k} = [k=0];  \\
+  Q_{n,k} &= Q_{n-1,k}+Q_{n-1,k-1}+\binom{n}{k}, \quad\text{for $n$, $k>0$.}
+\end{align*}		\\
+
+% The align* environment makes the equations line up on the ampersands, the & symbols, just like a table. Notice how we’ve used \quad to insert a bit of space, and \text to put some normal text inside math mode. We’ve also used another math mode command, \binom, for a binomial.
+%Notice that here we used align*, and the equation didn’t come out numbered. Most math environments number the equations by default, and the starred variant (with a *) disables numbering.
+
+
+% Example for Matrices
+AMS matrices.
+\[
+\begin{matrix}
+a & b & c \\
+d & e & f
+\end{matrix}
+\quad
+\begin{pmatrix}
+a & b & c \\
+d & e & f
+\end{pmatrix}
+\quad
+\begin{bmatrix}
+a & b & c \\
+d & e & f
+\end{bmatrix}
+\]			\\
+
+
+% fonts in math mode
+%Unlike normal text, font changes in math mode often convey very specific meaning. They are therefore often written explicitly. There are a set of commands you need here:
+
+%\mathrm: roman (upright)
+%\mathit: italic spaced as ‘text’
+%\mathbf: boldface
+%\mathsf: sans serif
+%\mathtt: monospaced (typewriter)
+%\mathbb: double-struck (blackboard bold) (provided by the amsfonts package)
+
+Fonts:
+The matrix $\mathbf{M}$.			\\
+
+%Note that the default math italic separates letters so that they may be used to denote a product of variables. Use \mathit to make a word italic.
+
+%The \math.. font commands use fonts specified for math use. Sometimes you need to embed a word that is part of the outer sentence structure and needs the current text font, for that you can use \text{...} (which is provided by the amsmath package) or specific font styles such as \textrm{..}.
+
+
+$\text{bad use } size  \neq \mathit{size} \neq \mathrm{size} $
+
+\textit{$\text{bad use } size \neq \mathit{size} \neq \mathrm{size} $}
+
+
+
+
+\end{document}
