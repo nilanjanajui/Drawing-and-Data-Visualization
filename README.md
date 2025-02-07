@@ -10,7 +10,7 @@ Welcome to the **Drawing and Data Visualization** repository!
 
 📖 **Course:** Drawing and Data Visualization  
 🛠 **Languages & Tools:** LaTeX, Python, R, Presentation Design  
-💻 **Author:** [Nilanjana Das Jui](https://github.com/YOUR_GITHUB_PROFILE)  
+💻 **Author:** [Nilanjana Das Jui](https://github.com/nilanjanajui)  
 🎨 **Core Idea:** Transforming raw data into visually compelling stories.  
 📚 **What You'll Learn:** Creating stunning plots, interactive visualizations, technical drawings, and impactful presentations.
 
@@ -88,7 +88,8 @@ This project is licensed under the **MIT License**. Feel free to use, share, and
 ## 🌟 Connect & Collaborate
 
 💡 Let's build a **visualization powerhouse** together! Connect with me on GitHub and explore more projects!  
-🔗 **GitHub**: [YOUR_GITHUB_PROFILE](https://github.com/YOUR_GITHUB_PROFILE)  
-📧 **Email**: [your-email@example.com](mailto:your-email@example.com)  
+🔗 **GitHub**: [Nilanjana Das Jui](https://github.com/nilanjanajui)  
+📧 **Email**: [nilanjana.csecu@gmail.com](mailto:nilanjana.csecu@gmail.com)  
+📌 **LinkedIn**: [Nilanjana Das Jui](https://www.linkedin.com/in/nilanjana-jui-759402286/)
 
 ✨ **Happy Visualizing & Storytelling!** 🚀🎨📊
