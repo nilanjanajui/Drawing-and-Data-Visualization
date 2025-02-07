@@ -1,4 +1,4 @@
-# 🎨 Drawing & Data Visualization - The Ultimate Creative & Analytical Journey!
+# 🎨 Drawing & Data Visualization!
 
 Welcome to the **Drawing and Data Visualization** repository! 
 
